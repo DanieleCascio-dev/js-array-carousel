@@ -43,8 +43,15 @@ document.querySelector(".next").addEventListener("click", function () {
 
 //Event listener and for iterations to "prev" div
 document.querySelector(".prev").addEventListener("click", function () {
-  allImg[indexImg].classList.remove("active");
-  console.log(allImg[indexImg]);
-  indexImg--;
-  allImg[indexImg].classList.add("active");
+  if (indexImg <= 0) {
+    allImg[indexImg].classList.remove("active");
+    indexImg = allImg.length - 1;
+    allImg[indexImg].classList.add("active");
+    console.log(allImg[indexImg]);
+  } else {
+    allImg[indexImg].classList.remove("active");
+    console.log(allImg[indexImg]);
+    indexImg--;
+    allImg[indexImg].classList.add("active");
+  }
 });
