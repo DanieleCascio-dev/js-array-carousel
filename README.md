@@ -27,4 +27,4 @@ Non lasciamoci spaventare dalla complessità apparente dell'esercizio, ma analiz
 1. Creo un arrey contenente le img
 2. Estraggo una alla volta le img e le stampo in html e le metto tutte in display:none;
 3. Alla prima img (indice 0) aggiungo una classe per renderla visibile con display:binline block;
-4. Quando cliccoimg/01.jpg
+4. Quando clicco

@@ -1,4 +1,7 @@
+//Dichiarazioni variabili
+
 const items = document.querySelector(".items");
+let imgMess = "";
 console.log(items);
 
 const arrayImg = [
@@ -9,8 +12,14 @@ const arrayImg = [
   "img/05.jpg",
 ];
 
-console.log(arrayImg);
+// console.log(arrayImg);
 
 for (let i = 0; i < arrayImg.length; i++) {
   const curImg = arrayImg[i];
+  imgMess += ` <!-- <div class="item">
+  <img src="${curImg}" alt="" />
+</div> -->`;
+  /* console.log(imgMess); */
 }
+console.log(imgMess);
+items.innerHTML += imgMess;
