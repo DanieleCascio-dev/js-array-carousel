@@ -27,5 +27,16 @@ items.innerHTML += imgMess;
 const allImg = document.querySelectorAll(".item");
 console.log(allImg);
 
-//For iterations to set active class
+//Set the first img to display block
 allImg[0].classList.add("active");
+
+//set a variable for index
+let indexImg = 0;
+
+//Event listener and for iterations to "next" div
+document.querySelector(".next").addEventListener("click", function () {
+  allImg[indexImg].classList.remove("active");
+  console.log(allImg[indexImg]);
+  indexImg++;
+  allImg[indexImg].classList.add("active");
+});
