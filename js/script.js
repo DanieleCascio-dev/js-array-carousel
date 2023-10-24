@@ -40,3 +40,11 @@ document.querySelector(".next").addEventListener("click", function () {
   indexImg++;
   allImg[indexImg].classList.add("active");
 });
+
+//Event listener and for iterations to "prev" div
+document.querySelector(".prev").addEventListener("click", function () {
+  allImg[indexImg].classList.remove("active");
+  console.log(allImg[indexImg]);
+  indexImg--;
+  allImg[indexImg].classList.add("active");
+});
