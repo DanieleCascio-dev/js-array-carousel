@@ -2,7 +2,6 @@
 
 const items = document.querySelector(".items");
 let imgMess = "";
-console.log(items);
 
 const arrayImg = [
   "img/01.jpg",
@@ -16,10 +15,17 @@ const arrayImg = [
 
 for (let i = 0; i < arrayImg.length; i++) {
   const curImg = arrayImg[i];
-  imgMess += ` <!-- <div class="item">
+  imgMess += ` <div class="item">
   <img src="${curImg}" alt="" />
-</div> -->`;
+</div> `;
   /* console.log(imgMess); */
 }
 console.log(imgMess);
 items.innerHTML += imgMess;
+
+//Array with all item in html
+const allImg = document.querySelectorAll(".item");
+console.log(allImg);
+
+//For iterations to set active class
+allImg[0].classList.add("active");
