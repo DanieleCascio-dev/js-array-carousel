@@ -29,3 +29,4 @@ Non lasciamoci spaventare dalla complessità apparente dell'esercizio, ma analiz
 3. Alla prima img (indice 0) aggiungo una classe per renderla visibile con display:binline block;
 4. Quando clicco su "prev" o "next", l'immagine cambia:
    creo un event listener dove aggiungo o tolgo la classe active
+5. Quando vado avanti oltre l'ultima immagine o viceversa vadi prima della prima immagine, cambio valore del mio index per fare comparire le img come se fossero in un ciclo infinito

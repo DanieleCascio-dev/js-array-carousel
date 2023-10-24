@@ -41,10 +41,10 @@ document.querySelector(".next").addEventListener("click", function () {
     allImg[indexImg].classList.remove("active");
     indexImg = 0;
     allImg[indexImg].classList.add("active");
-    console.log(allImg[indexImg]);
+    //console.log(allImg[indexImg]);
   } else {
     allImg[indexImg].classList.remove("active");
-    console.log(allImg[indexImg]);
+    //console.log(allImg[indexImg]);
     indexImg++;
     allImg[indexImg].classList.add("active");
   }
@@ -56,10 +56,10 @@ document.querySelector(".prev").addEventListener("click", function () {
     allImg[indexImg].classList.remove("active");
     indexImg = lastPos;
     allImg[indexImg].classList.add("active");
-    console.log(allImg[indexImg]);
+    //console.log(allImg[indexImg]);
   } else {
     allImg[indexImg].classList.remove("active");
-    console.log(allImg[indexImg]);
+    //console.log(allImg[indexImg]);
     indexImg--;
     allImg[indexImg].classList.add("active");
   }
