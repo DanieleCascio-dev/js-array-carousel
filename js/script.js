@@ -37,30 +37,22 @@ allImg[0].classList.add("active");
 
 //Event listener and for iterations to "next" div
 document.querySelector(".next").addEventListener("click", function () {
+  allImg[indexImg].classList.remove("active");
   if (indexImg >= lastPos) {
-    allImg[indexImg].classList.remove("active");
     indexImg = 0;
-    allImg[indexImg].classList.add("active");
-    //console.log(allImg[indexImg]);
   } else {
-    allImg[indexImg].classList.remove("active");
-    //console.log(allImg[indexImg]);
     indexImg++;
-    allImg[indexImg].classList.add("active");
   }
+  allImg[indexImg].classList.add("active");
 });
 
 //Event listener and for iterations to "prev" div
 document.querySelector(".prev").addEventListener("click", function () {
+  allImg[indexImg].classList.remove("active");
   if (indexImg <= 0) {
-    allImg[indexImg].classList.remove("active");
     indexImg = lastPos;
-    allImg[indexImg].classList.add("active");
-    //console.log(allImg[indexImg]);
   } else {
-    allImg[indexImg].classList.remove("active");
-    //console.log(allImg[indexImg]);
     indexImg--;
-    allImg[indexImg].classList.add("active");
   }
+  allImg[indexImg].classList.add("active");
 });
